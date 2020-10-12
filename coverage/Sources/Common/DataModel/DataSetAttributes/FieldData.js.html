@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">60.48% </span>
+                <span class="strong">54.03% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>75/124</span>
+                <span class='fraction'>67/124</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">51.79% </span>
+                <span class="strong">46.43% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>29/56</span>
+                <span class='fraction'>26/56</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">41.67% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>20/48</span>
+                <span class='fraction'>16/48</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">65.42% </span>
+                <span class="strong">57.94% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>70/107</span>
+                <span class='fraction'>62/107</span>
             </div>
         
             
@@ -278,15 +278,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">130x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">130x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">130x</span>
@@ -393,13 +393,6 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">130x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">130x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -407,7 +400,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">130x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">130x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">130x</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -480,16 +480,16 @@ function vtkFieldData(publicAPI, model) {
     model.arrays = model.arrays.map(<span class="fstat-no" title="function not covered" >(i</span>tem) =&gt; (<span class="cstat-no" title="statement not covered" >{ data: vtk(item.data) })</span>);
   }
 &nbsp;
-  publicAPI.initialize = () =&gt; {
-    publicAPI.initializeFields();
-    publicAPI.copyAllOn();
-    publicAPI.clearFieldFlags();
+  publicAPI.initialize = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >    publicAPI.initializeFields();</span>
+<span class="cstat-no" title="statement not covered" >    publicAPI.copyAllOn();</span>
+<span class="cstat-no" title="statement not covered" >    publicAPI.clearFieldFlags();</span>
   };
 &nbsp;
-  publicAPI.initializeFields = () =&gt; {
-    model.arrays = [];
-    model.copyFieldFlags = {};
-    publicAPI.modified();
+  publicAPI.initializeFields = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >    model.arrays = [];</span>
+<span class="cstat-no" title="statement not covered" >    model.copyFieldFlags = {};</span>
+<span class="cstat-no" title="statement not covered" >    publicAPI.modified();</span>
   };
 &nbsp;
   publicAPI.copyStructure = <span class="fstat-no" title="function not covered" >(o</span>ther) =&gt; {
@@ -595,8 +595,8 @@ function vtkFieldData(publicAPI, model) {
   publicAPI.copyFieldOff = <span class="fstat-no" title="function not covered" >(a</span>rrayName) =&gt; {
 <span class="cstat-no" title="statement not covered" >    model.copyFieldFlags[arrayName] = false;</span>
   };
-  publicAPI.copyAllOn = () =&gt; {
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (!model.doCopyAllOn || model.doCopyAllOff) {
+  publicAPI.copyAllOn = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >    if (!model.doCopyAllOn || model.doCopyAllOff) {</span>
 <span class="cstat-no" title="statement not covered" >      model.doCopyAllOn = true;</span>
 <span class="cstat-no" title="statement not covered" >      model.doCopyAllOff = false;</span>
 <span class="cstat-no" title="statement not covered" >      publicAPI.modified();</span>
@@ -609,8 +609,8 @@ function vtkFieldData(publicAPI, model) {
 <span class="cstat-no" title="statement not covered" >      publicAPI.modified();</span>
     }
   };
-  publicAPI.clearFieldFlags = () =&gt; {
-    model.copyFieldFlags = {};
+  publicAPI.clearFieldFlags = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >    model.copyFieldFlags = {};</span>
   };
   publicAPI.deepCopy = <span class="fstat-no" title="function not covered" >(o</span>ther) =&gt; {
 <span class="cstat-no" title="statement not covered" >    model.arrays = other.getArrays().map(<span class="fstat-no" title="function not covered" >(a</span>rr) =&gt; {</span>
@@ -673,7 +673,7 @@ export default { newInstance, extend };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Oct 05 2020 16:15:35 GMT+0000 (Coordinated Universal Time)
+                at Mon Oct 12 2020 13:54:39 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../../../prettify.js"></script>

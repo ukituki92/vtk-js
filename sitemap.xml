@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://kitware.github.io/vtk-js/api/Proxy_Representations_VolumeRepresentationProxy.html</loc>
+    <loc>https://kitware.github.io/vtk-js/examples/ResliceCursorWidget.html</loc>
     
-    <lastmod>2020-10-21T09:32:00.046Z</lastmod>
+    <lastmod>2020-10-21T14:04:57.909Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://kitware.github.io/vtk-js/api/Widgets_Widgets3D_ResliceCursorWidget.html</loc>
     
-    <lastmod>2020-10-19T14:53:10.425Z</lastmod>
+    <lastmod>2020-10-21T14:04:57.249Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kitware.github.io/vtk-js/api/Proxy_Representations_VolumeRepresentationProxy.html</loc>
+    
+    <lastmod>2020-10-21T09:32:00.046Z</lastmod>
     
   </url>
   
@@ -184,13 +191,6 @@
   </url>
   
   <url>
-    <loc>https://kitware.github.io/vtk-js/examples/ResliceCursorWidget.html</loc>
-    
-    <lastmod>2020-07-29T19:26:06.145Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kitware.github.io/vtk-js/examples/SplineWidget.html</loc>
     
     <lastmod>2020-07-29T19:26:06.145Z</lastmod>
@@ -205,14 +205,14 @@
   </url>
   
   <url>
-    <loc>https://kitware.github.io/vtk-js/examples/PolyLineWidget.html</loc>
+    <loc>https://kitware.github.io/vtk-js/examples/PaintWidget.html</loc>
     
     <lastmod>2020-07-29T19:26:06.141Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kitware.github.io/vtk-js/examples/PaintWidget.html</loc>
+    <loc>https://kitware.github.io/vtk-js/examples/PolyLineWidget.html</loc>
     
     <lastmod>2020-07-29T19:26:06.141Z</lastmod>
     
@@ -227,6 +227,13 @@
   
   <url>
     <loc>https://kitware.github.io/vtk-js/examples/AngleWidget.html</loc>
+    
+    <lastmod>2020-07-29T19:26:06.137Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kitware.github.io/vtk-js/examples/DistanceWidget.html</loc>
     
     <lastmod>2020-07-29T19:26:06.137Z</lastmod>
     
@@ -248,13 +255,6 @@
   
   <url>
     <loc>https://kitware.github.io/vtk-js/examples/ImageCroppingWidget.html</loc>
-    
-    <lastmod>2020-07-29T19:26:06.137Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kitware.github.io/vtk-js/examples/DistanceWidget.html</loc>
     
     <lastmod>2020-07-29T19:26:06.137Z</lastmod>
     
@@ -457,7 +457,7 @@
   </url>
   
   <url>
-    <loc>https://kitware.github.io/vtk-js/examples/ResliceCursor.html</loc>
+    <loc>https://kitware.github.io/vtk-js/examples/PiecewiseGaussianWidget.html</loc>
     
     <lastmod>2020-07-29T19:26:06.101Z</lastmod>
     
@@ -478,7 +478,7 @@
   </url>
   
   <url>
-    <loc>https://kitware.github.io/vtk-js/examples/PiecewiseGaussianWidget.html</loc>
+    <loc>https://kitware.github.io/vtk-js/examples/ResliceCursor.html</loc>
     
     <lastmod>2020-07-29T19:26:06.101Z</lastmod>
     
@@ -534,14 +534,14 @@
   </url>
   
   <url>
-    <loc>https://kitware.github.io/vtk-js/examples/MouseCameraTrackballFirstPersonManipulator.html</loc>
+    <loc>https://kitware.github.io/vtk-js/examples/MouseRangeManipulator.html</loc>
     
     <lastmod>2020-07-29T19:26:06.093Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kitware.github.io/vtk-js/examples/MouseRangeManipulator.html</loc>
+    <loc>https://kitware.github.io/vtk-js/examples/MouseCameraTrackballFirstPersonManipulator.html</loc>
     
     <lastmod>2020-07-29T19:26:06.093Z</lastmod>
     

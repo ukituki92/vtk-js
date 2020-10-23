@@ -25,14 +25,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">1.38% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/434</span>
+                <span class='fraction'>6/436</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/198</span>
+                <span class='fraction'>0/200</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">1.41% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/425</span>
+                <span class='fraction'>6/427</span>
             </div>
         
             
@@ -1118,7 +1118,12 @@
 <a name='L1059'></a><a href='#L1059'>1059</a>
 <a name='L1060'></a><a href='#L1060'>1060</a>
 <a name='L1061'></a><a href='#L1061'>1061</a>
-<a name='L1062'></a><a href='#L1062'>1062</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L1062'></a><a href='#L1062'>1062</a>
+<a name='L1063'></a><a href='#L1063'>1063</a>
+<a name='L1064'></a><a href='#L1064'>1064</a>
+<a name='L1065'></a><a href='#L1065'>1065</a>
+<a name='L1066'></a><a href='#L1066'>1066</a>
+<a name='L1067'></a><a href='#L1067'>1067</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1415,6 +1420,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -2476,6 +2486,11 @@ function <span class="fstat-no" title="function not covered" >vtkRenderWindowInt
   };
 &nbsp;
 <span class="cstat-no" title="statement not covered" >  publicAPI.handleMouseDown = <span class="fstat-no" title="function not covered" >(e</span>vent) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    if (event.button &gt; 2) {</span>
+      // ignore events from extra mouse buttons such as `back` and `forward`
+<span class="cstat-no" title="statement not covered" >      return;</span>
+    }
+&nbsp;
 <span class="cstat-no" title="statement not covered" >    interactionRegistration(true);</span>
 <span class="cstat-no" title="statement not covered" >    event.stopPropagation();</span>
 <span class="cstat-no" title="statement not covered" >    event.preventDefault();</span>
@@ -2485,18 +2500,18 @@ function <span class="fstat-no" title="function not covered" >vtkRenderWindowInt
     };
     const keys = <span class="cstat-no" title="statement not covered" >getModifierKeysFor(event);</span>
 <span class="cstat-no" title="statement not covered" >    Object.assign(callData, keys);</span>
-<span class="cstat-no" title="statement not covered" >    switch (event.which) {</span>
-      case 1:
+<span class="cstat-no" title="statement not covered" >    switch (event.button) {</span>
+      case 0:
 <span class="cstat-no" title="statement not covered" >        publicAPI.leftButtonPressEvent(callData);</span>
 <span class="cstat-no" title="statement not covered" >        break;</span>
-      case 2:
+      case 1:
 <span class="cstat-no" title="statement not covered" >        publicAPI.middleButtonPressEvent(callData);</span>
 <span class="cstat-no" title="statement not covered" >        break;</span>
-      case 3:
+      case 2:
 <span class="cstat-no" title="statement not covered" >        publicAPI.rightButtonPressEvent(callData);</span>
 <span class="cstat-no" title="statement not covered" >        break;</span>
       default:
-<span class="cstat-no" title="statement not covered" >        vtkErrorMacro(`Unknown mouse button pressed: ${event.which}`);</span>
+<span class="cstat-no" title="statement not covered" >        vtkErrorMacro(`Unknown mouse button pressed: ${event.button}`);</span>
 <span class="cstat-no" title="statement not covered" >        break;</span>
     }
   };
@@ -2731,18 +2746,18 @@ function <span class="fstat-no" title="function not covered" >vtkRenderWindowInt
     };
     const keys = <span class="cstat-no" title="statement not covered" >getModifierKeysFor(event);</span>
 <span class="cstat-no" title="statement not covered" >    Object.assign(callData, keys);</span>
-<span class="cstat-no" title="statement not covered" >    switch (event.which) {</span>
-      case 1:
+<span class="cstat-no" title="statement not covered" >    switch (event.button) {</span>
+      case 0:
 <span class="cstat-no" title="statement not covered" >        publicAPI.leftButtonReleaseEvent(callData);</span>
 <span class="cstat-no" title="statement not covered" >        break;</span>
-      case 2:
+      case 1:
 <span class="cstat-no" title="statement not covered" >        publicAPI.middleButtonReleaseEvent(callData);</span>
 <span class="cstat-no" title="statement not covered" >        break;</span>
-      case 3:
+      case 2:
 <span class="cstat-no" title="statement not covered" >        publicAPI.rightButtonReleaseEvent(callData);</span>
 <span class="cstat-no" title="statement not covered" >        break;</span>
       default:
-<span class="cstat-no" title="statement not covered" >        vtkErrorMacro(`Unknown mouse button released: ${event.which}`);</span>
+<span class="cstat-no" title="statement not covered" >        vtkErrorMacro(`Unknown mouse button released: ${event.button}`);</span>
 <span class="cstat-no" title="statement not covered" >        break;</span>
     }
   };
@@ -3247,7 +3262,7 @@ export default { newInstance, extend, handledEvents, ...Constants };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Oct 21 2020 14:04:44 GMT+0000 (Coordinated Universal Time)
+                at Fri Oct 23 2020 16:06:50 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../../../prettify.js"></script>

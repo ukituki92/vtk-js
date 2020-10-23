@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kitware.github.io/vtk-js/api/Rendering_Core_RenderWindowInteractor.html</loc>
+    
+    <lastmod>2020-10-23T16:07:43.459Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kitware.github.io/vtk-js/examples/ResliceCursorWidget.html</loc>
     
     <lastmod>2020-10-21T14:04:57.909Z</lastmod>
@@ -89,13 +96,6 @@
     <loc>https://kitware.github.io/vtk-js/api/Interaction_Manipulators_MouseCameraAxisRotateManipulator.html</loc>
     
     <lastmod>2020-09-22T22:40:54.961Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kitware.github.io/vtk-js/api/Rendering_Core_RenderWindowInteractor.html</loc>
-    
-    <lastmod>2020-09-16T14:54:25.006Z</lastmod>
     
   </url>
   

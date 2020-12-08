@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kitware.github.io/vtk-js/api/IO_Geometry_PLYReader.html</loc>
+    
+    <lastmod>2020-12-08T17:37:10.127Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kitware.github.io/vtk-js/examples/ResliceCursorWidget.html</loc>
     
     <lastmod>2020-12-08T02:06:41.892Z</lastmod>
@@ -58,14 +65,14 @@
   </url>
   
   <url>
-    <loc>https://kitware.github.io/vtk-js/api/Interaction_Manipulators_MouseCameraUnicamManipulator.html</loc>
+    <loc>https://kitware.github.io/vtk-js/api/Interaction_Manipulators_MouseCameraUnicamRotateManipulator.html</loc>
     
     <lastmod>2020-12-08T02:06:40.836Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kitware.github.io/vtk-js/api/Interaction_Manipulators_MouseCameraUnicamRotateManipulator.html</loc>
+    <loc>https://kitware.github.io/vtk-js/api/Interaction_Manipulators_MouseCameraUnicamManipulator.html</loc>
     
     <lastmod>2020-12-08T02:06:40.836Z</lastmod>
     
@@ -75,13 +82,6 @@
     <loc>https://kitware.github.io/vtk-js/examples/PLYReader.html</loc>
     
     <lastmod>2020-12-01T10:38:45.496Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kitware.github.io/vtk-js/api/IO_Geometry_PLYReader.html</loc>
-    
-    <lastmod>2020-12-01T10:38:44.591Z</lastmod>
     
   </url>
   
@@ -149,14 +149,14 @@
   </url>
   
   <url>
-    <loc>https://kitware.github.io/vtk-js/api/Widgets_Representations_CircleHandleRepresentation.html</loc>
+    <loc>https://kitware.github.io/vtk-js/api/Widgets_Representations_ConeHandleRepresentation.html</loc>
     
     <lastmod>2020-11-20T22:39:31.592Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kitware.github.io/vtk-js/api/Widgets_Representations_ConeHandleRepresentation.html</loc>
+    <loc>https://kitware.github.io/vtk-js/api/Widgets_Representations_CircleHandleRepresentation.html</loc>
     
     <lastmod>2020-11-20T22:39:31.592Z</lastmod>
     
@@ -296,14 +296,14 @@
   </url>
   
   <url>
-    <loc>https://kitware.github.io/vtk-js/api/IO_XML_XMLPolyDataReader.html</loc>
+    <loc>https://kitware.github.io/vtk-js/api/IO_XML_XMLReader.html</loc>
     
     <lastmod>2020-10-26T17:36:02.033Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kitware.github.io/vtk-js/api/IO_XML_XMLReader.html</loc>
+    <loc>https://kitware.github.io/vtk-js/api/IO_XML_XMLPolyDataReader.html</loc>
     
     <lastmod>2020-10-26T17:36:02.033Z</lastmod>
     

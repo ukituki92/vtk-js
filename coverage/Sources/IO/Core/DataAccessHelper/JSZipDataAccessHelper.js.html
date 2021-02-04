@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">1.89% </span>
+                <span class="strong">1.85% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/106</span>
+                <span class='fraction'>2/108</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/26</span>
+                <span class='fraction'>0/28</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">1.92% </span>
+                <span class="strong">1.89% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>2/104</span>
+                <span class='fraction'>2/106</span>
             </div>
         
             
@@ -301,7 +301,13 @@
 <a name='L242'></a><a href='#L242'>242</a>
 <a name='L243'></a><a href='#L243'>243</a>
 <a name='L244'></a><a href='#L244'>244</a>
-<a name='L245'></a><a href='#L245'>245</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L245'></a><a href='#L245'>245</a>
+<a name='L246'></a><a href='#L246'>246</a>
+<a name='L247'></a><a href='#L247'>247</a>
+<a name='L248'></a><a href='#L248'>248</a>
+<a name='L249'></a><a href='#L249'>249</a>
+<a name='L250'></a><a href='#L250'>250</a>
+<a name='L251'></a><a href='#L251'>251</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -380,19 +386,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -402,6 +403,19 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -443,7 +457,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -465,7 +478,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -622,6 +634,14 @@ function <span class="fstat-no" title="function not covered" >removeLeadingSlash
 <span class="cstat-no" title="statement not covered" >  return str[0] === '/' ? str.substr(1) : str;</span>
 }
 &nbsp;
+function <span class="fstat-no" title="function not covered" >normalizePath(</span>str) {
+<span class="cstat-no" title="statement not covered" >  return new URL(str, 'http://any').pathname;</span>
+}
+&nbsp;
+function <span class="fstat-no" title="function not covered" >cleanUpPath(</span>str) {
+<span class="cstat-no" title="statement not covered" >  return removeLeadingSlash(normalizePath(str));</span>
+}
+&nbsp;
 function <span class="fstat-no" title="function not covered" >create(</span>createOptions) {
   let ready = <span class="cstat-no" title="statement not covered" >false;</span>
   let requestCount = <span class="cstat-no" title="statement not covered" >0;</span>
@@ -654,7 +674,7 @@ function <span class="fstat-no" title="function not covered" >create(</span>crea
 <span class="cstat-no" title="statement not covered" >        if (!ready) {</span>
 <span class="cstat-no" title="statement not covered" >          vtkErrorMacro('ERROR!!! zip not ready...');</span>
         }
-        const url = <span class="cstat-no" title="statement not covered" >removeLeadingSlash(</span>
+        const url = <span class="cstat-no" title="statement not covered" >cleanUpPath(</span>
           [
             baseURL,
             array.ref.basepath,
@@ -687,13 +707,12 @@ function <span class="fstat-no" title="function not covered" >create(</span>crea
           options.compression,
           doneCleanUp
         );
-&nbsp;
 <span class="cstat-no" title="statement not covered" >        zipRoot.file(url).async(asyncType).then(asyncCallback);</span>
       });
     },
 &nbsp;
 <span class="fstat-no" title="function not covered" >    fe</span>tchJSON(instance = <span class="branch-0 cbranch-no" title="branch not covered" >{},</span> url, options = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span> {
-      const path = <span class="cstat-no" title="statement not covered" >removeLeadingSlash(url);</span>
+      const path = <span class="cstat-no" title="statement not covered" >cleanUpPath(url);</span>
 <span class="cstat-no" title="statement not covered" >      if (!ready) {</span>
 <span class="cstat-no" title="statement not covered" >        vtkErrorMacro('ERROR!!! zip not ready...');</span>
       }
@@ -710,7 +729,6 @@ function <span class="fstat-no" title="function not covered" >create(</span>crea
         }
 <span class="cstat-no" title="statement not covered" >        return Promise.reject(new Error('Invalid compression'));</span>
       }
-&nbsp;
 <span class="cstat-no" title="statement not covered" >      return zipRoot</span>
         .file(path)
         .async('string')
@@ -718,7 +736,7 @@ function <span class="fstat-no" title="function not covered" >create(</span>crea
     },
 &nbsp;
 <span class="fstat-no" title="function not covered" >    fe</span>tchText(instance = <span class="branch-0 cbranch-no" title="branch not covered" >{},</span> url, options = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span> {
-      const path = <span class="cstat-no" title="statement not covered" >removeLeadingSlash(url);</span>
+      const path = <span class="cstat-no" title="statement not covered" >cleanUpPath(url);</span>
 <span class="cstat-no" title="statement not covered" >      if (!ready) {</span>
 <span class="cstat-no" title="statement not covered" >        vtkErrorMacro('ERROR!!! zip not ready...');</span>
       }
@@ -743,7 +761,7 @@ function <span class="fstat-no" title="function not covered" >create(</span>crea
     },
 &nbsp;
 <span class="fstat-no" title="function not covered" >    fe</span>tchImage(instance = <span class="branch-0 cbranch-no" title="branch not covered" >{},</span> url, options = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span> {
-      const path = <span class="cstat-no" title="statement not covered" >removeLeadingSlash(url);</span>
+      const path = <span class="cstat-no" title="statement not covered" >cleanUpPath(url);</span>
 <span class="cstat-no" title="statement not covered" >      if (!ready) {</span>
 <span class="cstat-no" title="statement not covered" >        vtkErrorMacro('ERROR!!! zip not ready...');</span>
       }
@@ -763,7 +781,7 @@ function <span class="fstat-no" title="function not covered" >create(</span>crea
     },
 &nbsp;
 <span class="fstat-no" title="function not covered" >    fe</span>tchBinary(instance = <span class="branch-0 cbranch-no" title="branch not covered" >{},</span> url, options = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span> {
-      const path = <span class="cstat-no" title="statement not covered" >removeLeadingSlash(url);</span>
+      const path = <span class="cstat-no" title="statement not covered" >cleanUpPath(url);</span>
 <span class="cstat-no" title="statement not covered" >      if (!ready) {</span>
 <span class="cstat-no" title="statement not covered" >        vtkErrorMacro('ERROR!!! zip not ready...');</span>
       }
@@ -796,7 +814,7 @@ export default {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Feb 04 2021 13:47:05 GMT+0000 (Coordinated Universal Time)
+                at Thu Feb 04 2021 18:38:09 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../../../prettify.js"></script>

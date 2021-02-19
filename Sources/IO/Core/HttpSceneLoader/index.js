@@ -392,10 +392,10 @@ function vtkHttpSceneLoader(publicAPI, model) {
         if (data.background && model.renderer) {
           setBackground(data.background);
         }
-        if (data.camera) {
-          originalSceneParameters.camera = data.camera;
-          setCameraParameters(data.camera);
-        }
+        // if (data.camera) {
+        //   originalSceneParameters.camera = data.camera;
+        //   setCameraParameters(data.camera);
+        // }
         const luts = {};
         if (data.lookupTables) {
           Object.keys(data.lookupTables).forEach((fieldName) => {

@@ -111,12 +111,9 @@ function vtkFullScreenRenderWindow(publicAPI, model) {
     publicAPI.setControllerVisibility(!model.controllerVisibility);
   };
 
-  publicAPI.addController = (html) => {
+  publicAPI.addController = (html, style) => {
     model.controlContainer = document.createElement('div');
-    applyStyle(
-      model.controlContainer,
-      model.controlPanelStyle || STYLE_CONTROL_PANEL
-    );
+    applyStyle(model.controlContainer, style || STYLE_CONTROL_PANEL);
     model.rootContainer.appendChild(model.controlContainer);
     model.controlContainer.innerHTML = html;
 
